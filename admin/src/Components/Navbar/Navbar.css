@@ -1,0 +1,38 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 60px;
+    box-shadow: 0 1px 3px -2px black;
+    margin-bottom: 1px;
+    background: white;
+}
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-logo img{
+    width: 45px;
+}
+.nav-profile{
+   
+    height: 50px;
+    border-radius: 50%;
+}
+.nav-profile img{
+    height: 100%;
+    width: 100%;
+}
+@media(max-width:800px){
+    .navbar{
+        padding: 15px 30px;
+    } 
+    .nav-logo{
+        width: 150px;
+    }
+    .nav-profile{
+        width: 60px;
+    }
+}

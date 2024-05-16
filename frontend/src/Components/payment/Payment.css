@@ -1,0 +1,22 @@
+.loginsignup{
+    width: 100%;
+    min-height: 90vh;
+    background:  linear-gradient(180deg, #fde1ff, #ebebeb22 90%);
+    padding-top: 100px;
+}
+
+.loginsignup-container h2{
+    font-size: 2rem;
+    text-align: center;
+}
+.inputbox{
+    margin: 1.2rem;
+}
+.inputbox input{
+    padding: 0.5rem;
+   
+}
+.inputbox span{
+    margin-left: 1rem;
+   
+}
