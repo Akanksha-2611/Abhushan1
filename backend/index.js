@@ -12,7 +12,7 @@ const cors = require("cors");
 app.use(express.json());
 app.use(cors(
     {
-        origin:["https://abhushan1-frontend.vercel.app/"],
+        origin:["https://abhushan1-frontend.vercel.app"],
         methods:["POST","GET"],
         credentials:true
     }
