@@ -10,13 +10,21 @@ const path = require("path");
 const cors = require("cors");
 
 app.use(express.json());
-app.use(cors(
-    {
-        origin:["https://abhushan1-frontend.vercel.app"],
-        methods:["POST","GET"],
-        credentials:true
-    }
-));
+// app.use(cors(
+//     {
+//         origin:["https://abhushan1-frontend.vercel.app"],
+//         methods:["POST","GET"],
+//         credentials:true
+//     }
+// ));
+const corsOptions = {
+  origin: 'https://abhushan1-frontend.vercel.app',
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true, // if you need to include cookies in CORS requests
+  optionsSuccessStatus: 204
+};
+
+app.use(cors(corsOptions));
 
 // Database Connection With MongoDB
 // mongoose.connect("mongodb+srv://Akanksha:Akanksha@123@cluster0.jpqnrz5.mongodb.net/SHOPPING_CART");
