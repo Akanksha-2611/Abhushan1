@@ -12,7 +12,8 @@ const LoginSignup = () => {
 
   const login = async () => {
     let dataObj;
-    await fetch('https://abhushan1.vercel.app/login', {
+    // await fetch('https://abhushan1.vercel.app/login', {
+    await fetch('https://abhushan1-backend.vercel.app/login',{
       method: 'POST',
       headers: {
         Accept:'application/form-data',
@@ -35,7 +36,8 @@ const LoginSignup = () => {
 
   const signup = async () => {
     let dataObj;
-    await fetch('https://abhushan1.vercel.app/signup', {
+    // await fetch('https://abhushan1.vercel.app/signup', {
+     await fetch('https://abhushan1-backend.vercel.app/signup',{
       method: 'POST',
       headers: {
         Accept:'application/form-data',
