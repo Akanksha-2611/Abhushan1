@@ -19,7 +19,7 @@ const ShopContextProvider = (props) => {
 
   useEffect(() => {
     // fetch('http://localhost:4000/allproducts') 
-    fetch('https://abhushan1-backend.vercel.app/allproducts')
+    fetch('https://abhushan1-admin.vercel.app/allproducts')
           .then((res) => res.json()) 
           .then((data) => setProducts(data))
 
