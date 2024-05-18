@@ -17,14 +17,9 @@ app.use(express.json());
 //         credentials:true
 //     }
 // ));
-const corsOptions = {
-  origin: 'https://abhushan1-frontend.vercel.app',
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-  credentials: true, // if you need to include cookies in CORS requests
-  optionsSuccessStatus: 204
-};
 
-app.use(cors(corsOptions));
+
+app.use(cors());
 
 // Database Connection With MongoDB
 // mongoose.connect("mongodb+srv://Akanksha:Akanksha@123@cluster0.jpqnrz5.mongodb.net/SHOPPING_CART");
